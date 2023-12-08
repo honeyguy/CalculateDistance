@@ -1,0 +1,19 @@
+INSTRUCTION :-
+
+1. To setup project (Spring Boot).
+a. Clone or download the project :- https://github.com/honeyguy/CalculateDistance.git
+b. Setup the database refer No. 2
+c. Open cmd and Navigate to root folder where pom.xml located.
+d. Execute these commands. Hope maven is install in your machine.
+-> mvn -DskipTest=true clean
+-> mvn -DskipTests=true -Dmaven.test.skip clean install
+-> mvn spring-boot:run
+e. If build success then go to http://localhost:8084/ .
+
+
+2. To setup mysql database.
+a. Create schema and table . Refer to ukpostcodes_tablemysql.sql (Root directory of project)
+b. Run the postcode records by postcode-outcodes-mysql.sql.
+c. Configure the mysql setup in application.properties. Edit based on your own configuration.
+d. Exe by  'select * from postal.postaloutcode;' to view the list of records available.
+
